@@ -22,7 +22,6 @@ const saveInDB = async () => {
 }
 
 //Update the field
-
 const updateInDB =async  () => {
     const Product = mongoose.model('products', productSchema);
     let data =await  Product.updateOne(
@@ -40,7 +39,6 @@ const deleteInDB = async ()=>{
     let data = await Product.deleteOne({name:'max 100'})
     console.log(data);
 }
-
 
 const findInDB = async ()=>{
     const Product = mongoose.model('products', productSchema);
