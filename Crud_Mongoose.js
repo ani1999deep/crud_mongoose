@@ -33,7 +33,6 @@ const updateInDB =async  () => {
     console.log(data)
 }
 //Delete the field record
-
 const deleteInDB = async ()=>{
     const Product = mongoose.model('products', productSchema);
     let data = await Product.deleteOne({name:'max 100'})
